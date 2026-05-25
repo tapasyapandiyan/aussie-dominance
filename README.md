@@ -108,3 +108,52 @@ else:
         print("verdict: solid performance. doing a great job for the team.")
     if final_avg > 30.0:
         print("verdict: a bit expensive. need to work on line and length.")
+        
+
+## experiment 4: era comparison script (2000s vs modern era)
+wanted to write a script to compare the legendary 2000s team under steve waugh/ricky ponting with the current team led by pat cummins. it tracks world cups, test championship maces, and ashes wins.
+
+```python
+# comparing the two greatest eras of australian cricket
+# high school sports stats project
+
+# data structure for the 2000s golden team
+era_2000s = {
+    "captain": "waugh and ponting",
+    "odi_world_cups": 3,
+    "wtc_maces": 0, # wtc didnt exist back then
+    "ashes_series_won": 4
+}
+
+# data structure for the current modern team
+era_modern = {
+    "captain": "pat cummins",
+    "odi_world_cups": 1,
+    "wtc_maces": 1,
+    "ashes_series_won": 2 # retained/won counts
+}
+
+print("--- ERA COMPARISON LAB ---")
+
+print("checking stats for the 2000s era:")
+print("captains:")
+print(era_2000s["captain"])
+print("odi world cups won:")
+print(era_2000s["odi_world_cups"])
+
+print("\nchecking stats for the modern era:")
+print("captain:")
+print(era_modern["captain"])
+print("world test championship maces:")
+print(era_modern["wtc_maces"])
+
+print("\n--- final logical breakdown ---")
+
+# messy human comparison logic based on trophies
+if era_2000s["odi_world_cups"] > era_modern["odi_world_cups"]:
+    print("odi summary: the 2000s team dominates the limited overs format with the hat-trick of world cups.")
+
+if era_modern["wtc_maces"] > era_2000s["wtc_maces"]:
+    print("test summary: cummins era secured the official world test championship mace which makes them global test kings.")
+
+print("\nverdict: both eras are insane. 2000s was pure raw intimidation, but the cummins era wins everything across all formats under crazy pressure.")
