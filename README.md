@@ -73,3 +73,38 @@ if final_strike_rate >= 80.0 and final_strike_rate <= 120.0:
     print("intent: solid anchoring innings. building partnerships.")
 if final_strike_rate < 80.0:
     print("intent: too slow for modern limited overs. under pressure.")
+    
+    
+    
+## experiment 3: bowling average checker
+just a quick tool to calculate a bowler's average for a series or match. lower averages mean they are taking wickets cheaply, which is the key to australian dominance.
+
+```python
+# simple math script to get the bowling average
+# formula: runs allowed / total wickets taken
+
+runs_given = 124
+wickets_taken = 6
+
+print("--- series bowling stats ---")
+print("runs conceded:")
+print(runs_given)
+print("wickets taken:")
+print(wickets_taken)
+
+# simple check to avoid dividing by zero if a bowler didn't get a wicket
+if wickets_taken == 0:
+    print("bowling average: n/a (no wickets taken yet)")
+else:
+    bowling_avg = runs_given / wickets_taken
+    final_avg = round(bowling_avg, 2)
+    print("calculated average:")
+    print(final_avg)
+    
+    # basic student thresholds for performance
+    if final_avg <= 22.0:
+        print("verdict: absolute peak glenn mcgrath tier.")
+    if final_avg > 22.0 and final_avg <= 30.0:
+        print("verdict: solid performance. doing a great job for the team.")
+    if final_avg > 30.0:
+        print("verdict: a bit expensive. need to work on line and length.")
