@@ -1,5 +1,4 @@
 # aussie-dominance
-# aussie-dominance
 just tracking some data on how dominant the australian cricket team is across different formats.
 
 ## experiment 1: win streak and percentage calculator
